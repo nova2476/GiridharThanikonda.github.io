@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Arjun Mohnot | Site Reliability Engineer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://arjunmohnot.github.io/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://arjunmohnot.github.io/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://arjunmohnot.github.io/images/favicon-16x16.png">
+    <link rel="manifest" href="https://arjunmohnot.github.io/site.webmanifest">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <meta name="sre/developer" content="Arjun Mohnot" email="arjunmohnot@gmail.com" site="arjunmohnot.github.io">
+    <meta name="description" content="Arjun Mohnot: Site Reliability Engineer, creating software, bootstrapping infrastructure and increasing engineering productivity. Currently, working on infrastructure at LinkedIn.">
+    <meta property="og:title" content="Arjun Mohnot | SRE | DevOps">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:description" content="Arjun Mohnot: Site Reliability Engineer, creating software, bootstrapping infrastructure and increasing engineering productivity. Currently, working on infrastructure at LinkedIn.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="arjunmohnot.github.io">
+    <meta property="og:url" content="https://arjunmohnot.github.io/">
+    <meta property="og:image" content="https://arjunmohnot.github.io/images/automation.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet" rel="preload" as="style">
+    <style>
+         ::-moz-selection {
+            color: #202020;
+            background: #202020
+        }
+        
+         ::selection {
+            color: #202020;
+            background: #202020
+        }
+    </style>
+    <style>
+        body {
+            font-family: Rubik, sans-serif;
+            color: #fff
+        }
+        
+        @media all and (min-width:800px) {
+            p {
+                font-size: 24px;
+                line-height: 40px;
+                padding: 0;
+                margin: 0
+            }
+            h1 {
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: 400;
+                padding: 0;
+                margin: 0
+            }
+            h2 {
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: 400;
+                padding: 0;
+                margin: 0
+            }
+            h3 {
+                font-size: 14px;
+                line-height: 44px;
+                font-weight: 400;
+                padding: 0;
+                margin: 0
+            }
+            h3 {
+                letter-spacing: 2.8px;
+                opacity: .35
+            }
+            a {
+                color: #fff;
+                text-decoration: none
+            }
+        }
+        
+        @media all and (max-width:800px) {
+            p {
+                font-size: 21px;
+                line-height: 40px;
+                padding: 0;
+                margin: 0
+            }
+            h1 {
+                font-size: 24px;
+                line-height: 40px;
+                font-weight: 400;
+                padding: 0;
+                margin: 0
+            }
+            h2 {
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: 400;
+                padding: 0;
+                margin: 0
+            }
+            h3 {
+                font-size: 14px;
+                line-height: 44px;
+                font-weight: 400;
+                padding: 0;
+                margin: 0
+            }
+            h3 {
+                letter-spacing: 2.8px;
+                opacity: .35
+            }
+            a {
+                color: #fff;
+                text-decoration: none
+            }
+        }
+    </style>
+    <style>
+        @media all and (min-width:1200px) {
+            .arjun {
+                padding: 90px 120px
+            }
+            .header {
+                margin-bottom: 140px
+            }
+            .blurb {
+                padding-left: 23%
+            }
+            .work {
+                padding-left: 23%
+            }
+            .head-mast {
+                width: 23%
+            }
+            .head-desc {
+                width: 40%
+            }
+            .head-cont {
+                width: 37%;
+                text-align: right
+            }
+            .align-h {
+                line-height: 56px
+            }
+            .foot-copy {
+                float: left;
+                width: 50%
+            }
+            .foot-copy1 {
+                display: none
+            }
+            .foot-links {
+                float: left;
+                width: 50%;
+                text-align: right
+            }
+            .work-pro {
+                color: #fff;
+                width: 25%;
+                display: inline-block
+            }
+            .work-desc {
+                display: inline-block
+            }
+            .work a {
+                margin: 32px 0;
+                display: block
+            }
+        }
+        
+        @media all and (min-width:1050px) and (max-width:1200px) {
+            .arjun {
+                padding: 90px 60px
+            }
+            .header {
+                margin-bottom: 140px
+            }
+            .blurb {
+                padding-left: 23%
+            }
+            .work {
+                padding-left: 23%
+            }
+            .head-mast {
+                width: 23%
+            }
+            .head-desc {
+                width: 40%
+            }
+            .head-cont {
+                width: 37%;
+                text-align: right
+            }
+            .align-h {
+                line-height: 56px
+            }
+            .foot-copy {
+                float: left;
+                width: 50%
+            }
+            .foot-copy1 {
+                display: none
+            }
+            .foot-links {
+                float: left;
+                width: 50%;
+                text-align: right
+            }
+            .work-pro {
+                color: #fff;
+                width: 25%;
+                display: inline-block
+            }
+            .work-desc {
+                display: inline-block
+            }
+            .work a {
+                margin: 32px 0;
+                display: block
+            }
+        }
+        
+        @media all and (min-width:800px) and (max-width:1050px) {
+            .arjun {
+                padding: 90px 60px
+            }
+            .header {
+                margin-bottom: 200px
+            }
+            .blurb {
+                padding-left: 0
+            }
+            .work {
+                padding-left: 0
+            }
+            .head-mast {
+                width: 100%
+            }
+            .head-desc {
+                width: 50%
+            }
+            .head-cont {
+                width: 50%;
+                text-align: right
+            }
+            .align-h {
+                line-height: 56px
+            }
+            .foot-copy {
+                float: left;
+                width: 50%
+            }
+            .foot-copy1 {
+                display: none
+            }
+            .foot-links {
+                float: left;
+                width: 50%;
+                text-align: right
+            }
+            .work-pro {
+                color: #fff;
+                width: 25%;
+                display: inline-block
+            }
+            .work-desc {
+                display: inline-block
+            }
+            .work a {
+                margin: 32px 0;
+                display: block
+            }
+        }
+        
+        @media all and (max-width:800px) {
+            .arjun {
+                padding: 50px 20px
+            }
+            .header {
+                margin-bottom: 300px
+            }
+            .blurb {
+                padding-left: 0
+            }
+            .work {
+                padding-left: 0
+            }
+            .head-mast {
+                width: 100%
+            }
+            .head-desc {
+                width: 100%
+            }
+            .head-cont {
+                width: 100%;
+                text-align: left;
+                margin-top: 60px
+            }
+            .align-h {
+                line-height: 56px
+            }
+            .work-pro {
+                color: #fff;
+                width: 100%;
+                display: inline-block
+            }
+            .work-desc {
+                display: inline-block
+            }
+            .work a {
+                margin: 32px 0;
+                display: block
+            }
+            .foot-copy {
+                display: none
+            }
+            .foot-copy1 {
+                display: block;
+                float: right;
+                width: 100%;
+                margin-top: 80px
+            }
+            .foot-links {
+                float: right;
+                width: 100%;
+                text-align: left;
+                margin-top: 30px
+            }
+        }
+        
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            background-image: linear-gradient(315deg, #0f0c22 0, #000 74%)
+        }
+        
+        .arjun {
+            position: relative;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            position: relative;
+            width: 100%;
+            height: 100%
+        }
+        
+        .header {
+            clear: both;
+            width: 100%
+        }
+        
+        .head-mast {
+            opacity: 0;
+            float: left
+        }
+        
+        .head-desc {
+            opacity: 0;
+            float: left
+        }
+        
+        .head-cont {
+            opacity: 0;
+            float: left
+        }
+        
+        .blurb {
+            opacity: 0;
+            clear: both;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 4%
+        }
+        
+        .work {
+            opacity: 0;
+            clear: both;
+            width: 100%;
+            box-sizing: border-box
+        }
+        
+        .footer {
+            opacity: 0;
+            clear: both;
+            width: 100%;
+            padding-top: 4%
+        }
+        
+        .show {
+            position: fixed;
+            top: 0;
+            left: 0;
+            font-size: 12px;
+            background: #2a2a2a;
+            padding: 20px;
+            color: #fff;
+            display: none
+        }
+        
+        .change1,
+        .change2 {
+            transition: all .4s;
+            -webkit-transition: all .4s;
+            -moz-transition: all .4s
+        }
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.993.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <div class="show">346 / 193 / 85</div>
+    <div class="arjun">
+        <div class="header">
+            <div class="head-mast" style="opacity:1">
+                <a href="https://arjunmohnot.github.io/">
+                    <h2 name="Arjun Mohnot">Arjun Mohnot</h2>
+                </a>
+            </div>
+            <div class="head-desc begin" style="opacity:1">
+                <p class="align-h change2" style="color:#b3eeff">Site Reliability Engineer</p>
+            </div>
+            <div class="head-cont begin" style="opacity:1">
+                <a href="mailto:arjunmohnot@gmail.com">
+                    <p class="align-h" name="arjunmohnot@gmail.com">arjunmohnot@gmail.com</p>
+                </a>
+            </div>
+        </div>
+        <div class="blurb" style="opacity:1">
+            <h1 class="change1" style="color:#ffb3c4">I am passionate about software engineering, automation, incident response, and debugging challenging problems.<br><br>I believe in bridging the gap between customer experience and software development that inspires me to explore, learn and
+                make systems more reliable, automated, and designed to scale.<br><br>My main areas of interest are infrastructure administration and automation using configuration management, orchestration and other DevOps technologies.<br><br>Currently,
+                I am working with data grid SRE team @ <a target="_blank" href="https://www.linkedin.com/company/linkedin"><strong class="align-h change2" style="color:#b3eeff">LinkedIn</strong></a></h1>
+        </div>
+        <div class="work" style="opacity:1">
+            <h3>LINKS</h3>
+            <a href="https://arjunmohnot.medium.com/" target="_blank">
+                <p class="work-pro" name="Blogs">Blogs</p>
+                <p class="work-desc change2" name="Medium" style="color:#b3eeff">Medium</p>
+            </a>
+            <a href="https://scholar.google.com/citations?user=5QRzAR4AAAAJ&hl=en" target="_blank">
+                <p class="work-pro" name="Publication">Publication</p>
+                <p class="work-desc change2" name="Research Work" style="color:#b3eeff">Research Work</p>
+            </a>
+            <a href="https://play.google.com/store/apps/developer?id=ARJUN+MOHNOT&hl=en_IN&gl=US" target="_blank">
+                <p class="work-pro" name="Apps">Apps</p>
+                <p class="work-desc change2" name="PlayStore" style="color:#b3eeff">PlayStore</p>
+            </a>
+            <a href="https://github.com/arjunmohnot" target="_blank">
+                <p class="work-pro" name="Open Source">Open Source</p>
+                <p class="work-desc change2" name="GitHub" style="color:#b3eeff">GitHub</p>
+            </a>
+            <a href="https://arjunmohnot.github.io/pgp_key.txt" target="_blank">
+                <p class="work-pro" name="PGP KEYS">PGP KEYS</p>
+                <p class="work-desc change2" name="Public Key" style="color:#b3eeff">Public Key</p>
+            </a>
+        </div>
+        <div class="footer" style="opacity:1">
+            <div class="foot-copy">
+                <h3>© Arjun Mohnot <span id="copyright"><script>document.getElementById("copyright").appendChild(document.createTextNode((new Date).getFullYear()))</script></span><br><a href="https://www.linkedin.com/in/arjunmohnot/" target="_blank">LinkedIn</a>                    | <a href="https://github.com/arjunmohnot/" target="_blank">GitHub</a> | <a href="https://twitter.com/mohnotarjun" target="_blank">Twitter</a></h3>
+            </div>
+            <div class="foot-links">
+                <a href="https://drive.google.com/file/d/1mXTZt6ArvSmKLXtLBp64O-YXeULehYeL/view?usp=sharing" target="_blank">
+                    <p style="color:#fff" name="Résumé">Résumé</p>
+                </a>
+                <div class="foot-copy1">
+                    <h3>© Arjun Mohnot <span id="copyright-1"><script>document.getElementById("copyright-1").appendChild(document.createTextNode((new Date).getFullYear()))</script></span><br><a href="https://www.linkedin.com/in/arjunmohnot/" target="_blank">LinkedIn</a>                        | <a href="https://github.com/arjunmohnot/" target="_blank">GitHub</a> | <a href="https://twitter.com/mohnotarjun" target="_blank">Twitter</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/randomize_text.js"></script>
+    <script>
+        $(window).on("load", function() {
+            textcolour(), $(".head-mast").delay(100).fadeTo(800, 1), $(".head-mast a h2").randomizeText({
+                text: $(this).attr("name"),
+                refreshRate: 2,
+                timePerLetter: 4,
+                randomTime: 20
+            }), $(".head-desc").delay(5400).fadeTo(800, 1), $(".head-cont").delay(5800).fadeTo(800, 1), $(".blurb").delay(5900).fadeTo(800, 1), $(".work").delay(5950).fadeTo(800, 1), $(".footer").delay(5999).fadeTo(800, 1)
+        });
+        var hue1 = 220,
+            hue2 = 320,
+            l = 60;
+
+        function textcolour() {
+            $(".change1").css("color", "hsl(" + hue1 + ",100%," + l + "%)"), $(".change2").css("color", "hsl(" + hue2 + ",100%," + l + "%)")
+        }
+        $(window).mousemove(function() {
+            var e = event.clientX || event.layerX,
+                o = event.clientY || event.layerY,
+                t = e / screen.width,
+                a = o / screen.height;
+            hue1 = Math.floor(180 * t) + 180, hue2 = Math.floor(-180 * t) + 360, l = Math.floor(30 * a) + 60, $(".show").html(hue1 + " / " + hue2 + " / " + l), textcolour()
+        }), window.ondeviceorientation = function(e) {
+            var o = Math.ceil(.035 * e.gamma * 10) / 10 + 1,
+                t = Math.ceil(10 * (.035 * e.beta - 1)) / 10 - 1;
+            (o *= .5) < 0 && (o = 0), 1 < o && (o = 1), (t *= -.5) < 0 && (t = 0), 1 < t && (t = 1), hue1 = Math.floor(180 * o) + 180, hue2 = Math.floor(-180 * o) + 360, l = Math.floor(30 * t) + 60, $(".show").html(o + " / " + t + " / " + hue1 + " / " + hue2 + " / " + l), textcolour()
+        }, $("a p").mouseleave(function() {
+            $(this).randomizeText({
+                text: $(this).attr("name"),
+                refreshRate: 2,
+                timePerLetter: 4,
+                randomTime: 5
+            })
+        }), console.log("%cHello!", "color: #fff;background:#000;font-size:20px;padding-left:10px;"), console.log("%cWelcome to arjunmohnot.github.io ", "color: #fff;background:#000;font-size:15px;padding-left:10px;"), console.log("%cContact: arjunmohnot@gmail.com ", "color: #fff;background:#000;font-size:12px;padding-left:10px;")
+    </script>
+</body>
+
+</html>
